@@ -82,11 +82,11 @@
    ],
    
    [
-    "name" : "Save Object",
+    "name" : "SaveObject",
     "parameters" : [
       "Object" : new ObjectDataType("com.amex.amex.Object")
     ],
-    "displayName" : "Save Object",
+    "displayName" : "SaveObject",
     "icon" : "defaultemailicon.gif"
   ]
 
