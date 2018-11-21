@@ -79,6 +79,15 @@
      "displayName" : "Decision Task",
      "icon" : "defaultdecisionicon.png",
      "category" : "Decision tasks"
-   ]
+   ],
+   
+   [
+    "name" : "Save Object",
+    "parameters" : [
+      "Object" : new ObjectDataType("com.amex.amex.Object")
+    ],
+    "displayName" : "Save Object",
+    "icon" : "defaultemailicon.gif"
+  ]
 
 ]
