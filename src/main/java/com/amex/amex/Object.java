@@ -7,29 +7,38 @@ package com.amex.amex;
 @javax.persistence.Entity
 public class Object implements java.io.Serializable {
 
-    static final long serialVersionUID = 1L;
+	static final long serialVersionUID = 1L;
 
-    @javax.persistence.GeneratedValue(generator = "OBJECT_ID_GENERATOR", strategy = javax.persistence.GenerationType.AUTO)
-    @javax.persistence.Id
-    @javax.persistence.SequenceGenerator(name = "OBJECT_ID_GENERATOR", sequenceName = "OBJECT_ID_SEQ")
-    private java.lang.Long id;
+	@javax.persistence.GeneratedValue(generator = "OBJECT_ID_GENERATOR", strategy = javax.persistence.GenerationType.AUTO)
+	@javax.persistence.Id
+	@javax.persistence.SequenceGenerator(name = "OBJECT_ID_GENERATOR", sequenceName = "OBJECT_ID_SEQ")
+	private java.lang.Long id;
 
-    public Object() {
-    }
-    
-    public Object(java.lang.Long id) {
-        this.id = id;
-    }
+	@org.kie.api.definition.type.Label(value = "Text")
+	private java.lang.String text;
 
-    public java.lang.Long getId() {
-        return this.id;
-    }
-    
-    public void setId(java.lang.Long id) {
-        this.id = id;
-    }
+	public Object() {
+	}
 
+	public java.lang.Long getId() {
+		return this.id;
+	}
 
+	public void setId(java.lang.Long id) {
+		this.id = id;
+	}
 
+	public java.lang.String getText() {
+		return this.text;
+	}
+
+	public void setText(java.lang.String text) {
+		this.text = text;
+	}
+
+	public Object(java.lang.Long id, java.lang.String text) {
+		this.id = id;
+		this.text = text;
+	}
 
 }
