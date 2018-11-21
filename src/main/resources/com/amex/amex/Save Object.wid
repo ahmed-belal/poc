@@ -1,10 +1,8 @@
 [
   [
-    "name" : "MyTask", 
+    "name" : "Save Object WIH", 
     "parameters" : [ 
-        "MyFirstParam" : new StringDataType(), 
-        "MySecondParam" : new StringDataType(), 
-        "MyThirdParam" : new ObjectDataType() 
+        "MyFirstParam" : new ObjectDataType("com.amex.amex.Object")
     ], 
     "results" : [ 
         "Result" : new ObjectDataType("java.util.Map") 
