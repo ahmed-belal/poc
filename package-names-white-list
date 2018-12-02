@@ -1,0 +1,4 @@
+javax.persistence.criteria
+javax.persistence
+javax.persistence.metamodel
+javax.persistence.spi
